@@ -38,16 +38,4 @@ flowchart LR
         ALM --> SNS[SNS Topic]
     end
 
-    SNS -->|email| Ops([On-call email])sequenceDiagram
-    participant D as Developer
-    participant G as GitHub Actions
-    participant A as AWS (IAM/OIDC)
-    participant R as ECR
-    participant E as ECS
-    D->>G: push to main
-    G->>G: lint, pytest (FastAPI app)
-    G->>A: request temporary credentials (OIDC)
-    A-->>G: short-lived token
-    G->>R: build and push image (tag = Git commit SHA)
-    G->>E: register new task definition and update service
-    E-->>G: deployment status
+    SNS -->|email| Ops([On-call email])
