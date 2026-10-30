@@ -1,2 +1,10 @@
-# AWS-ECS-CICD-MONITORING-DEMO
-Automated deployment of a containerized web applications to Amazon ECS using terraform and GitHub Actions , with CloudWatch logs, CloudWatch Alarms, and Amazon SNS email notifications for monitoring and alerts.
+cat << 'EOF' > README.md
+# 🚀 AWS ECS Fargate CI/CD & Monitoring Architecture
+
+A production-grade, highly secure, and automated cloud infrastructure deployed on AWS using **Terraform**, **AWS ECS Fargate**, **GitHub Actions OIDC**, and **CloudWatch/SNS Monitoring**.
+
+---
+
+## 🏗️ System Architecture
+
+The architecture follows AWS best practices for high availability, multi-AZ resilience, and zero-trust security using strict network isolation (Principle of Least Privilege).
