@@ -1,4 +1,3 @@
-cat << 'EOF' > README.md
 # 🚀 AWS ECS Fargate CI/CD & Monitoring Architecture
 
 A production-grade, highly secure, and automated cloud infrastructure deployed on AWS using **Terraform**, **AWS ECS Fargate**, **GitHub Actions OIDC**, and **CloudWatch/SNS Monitoring**.
